@@ -1,23 +1,22 @@
 <?php
     // 自分の得意な言語で
     // Let's チャレンジ！！
-    $r = 0;
-    $w = 0;
-    $result = trim(fgets(STDIN));
-    $arrangement = str_split($result);
+    $correct = 0;
+    $incorrect = 0;
+    $string = trim(fgets(STDIN));
     $number = trim(fgets(STDIN));
-    //var_dump($arrangement);
-    foreach ($arrangement as $a) {
-        //echo $a;
-        if ($a == "R"){
-            $r = $r + 1;
-        }else{
-            $w = $w + 1;
+    $answerResultList = str_split($string);
+    
+    foreach ($answerResultList as $answerResult) {
+        if ($answerResult == "R") {
+            $correct = $correct + 1;
+        } else {
+            $incorrect = $incorrect + 1;
         }
     }
-    if ($number <= $r){
+    if ($number <= $correct) {
         echo "Yes";
-    }else{
+    } else {
         echo "No";
     }
 ?>
