@@ -16,9 +16,8 @@
         }
         if ($subject == "l" && $humanities < 160) {
             continue;
-        } else {
-            $totalPass = $totalPass + 1;
         }
+        $totalPass = $totalPass + 1;
     }
     echo $totalPass;
 ?>
