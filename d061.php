@@ -5,7 +5,7 @@
     $chokolates = calculateChokolate($chokolate);
     echo $chokolates;
     function calculateChokolate($chokolate) {
-      if ($chokolate < 1) return 1;
-      return $chokolate * 3; 
+        if ($chokolate < 1) return 1;
+        return $chokolate * 3; 
     }
 ?>
