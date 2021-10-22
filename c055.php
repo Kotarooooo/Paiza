@@ -6,11 +6,10 @@
     $focusString = trim(fgets(STDIN));
     for ($i = 0; $i < $number; $i++) {
         $logRecording = trim(fgets(STDIN));
-        if (strpos($logRecording,$focusString) !== false) {
-            echo $logRecording ."\n";
-        }
         if (strpos($logRecording,$focusString) === false) {
             $notincluded = $notincluded + 1;
+        } else {
+            echo $logRecording ."\n";
         }
     }
     if ($notincluded == $number) {
