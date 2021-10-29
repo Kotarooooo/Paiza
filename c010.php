@@ -12,7 +12,7 @@
         //左からx座標、y座標
         $conditionsFormula = ($constructionXCoordinate - $xCoordinate) **2 + ($constructionYCoordinate - $yCoordinate) **2;
         //paizaの問題文に記載されていた条件式を参考
-        if ($constructionRange < $conditionsFormula) {
+        if ($constructionRange <= $conditionsFormula) {
             echo "silent" ."\n";
         }
         if ($conditionsFormula <= $constructionRange) {
