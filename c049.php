@@ -3,7 +3,7 @@
     // Let's チャレンジ！！
     $logRecord = trim(fgets(STDIN));
     $total = 0;
-    $stoppedFloor[] = 1;
+    $stoppedFloor = [1];
     for ($i = 0; $i < $logRecord; $i++) {
         $stoppedFloor[] = trim(fgets(STDIN));
         $movedNumValue = $stoppedFloor[$i] - $stoppedFloor[$i + 1];
