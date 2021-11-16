@@ -6,7 +6,7 @@
     $twiceNoise = $noise ** 2;
     for ($i = 0; $i < $treeNum; $i++) {
         [$treeXCooodinate, $treeYCoodinate] = explode(" ", trim(fgets(STDIN)));
-        $conditionalExpression = ($treeXCooodinate - $xCoordinate) ** 2 + ($treeYCoodinate - $yCoordinate) **2;
+        $conditionalExpression = ($treeXCooodinate - $xCoordinate) ** 2 + ($treeYCoodinate - $yCoordinate) ** 2;
         if ($twiceNoise <= $conditionalExpression) {
             echo "silent" . "\n";
         } else {
