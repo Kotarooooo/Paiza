@@ -21,10 +21,10 @@
     $totalBookPrice = array_sum($bookPrice);
     $totalClothingPrice = array_sum($clothingPrice);
     $totalOtherPrice = array_sum($otherPrice);
-    $runcateFoodPrice = (floor(($totalFoodPrice) / 100) * 100);
-    $runcateBookPrice = (floor(($totalBookPrice) / 100) * 100);
-    $runcateClothingPrice = (floor(($totalClothingPrice) / 100) * 100);
-    $runcateOtherPrice = (floor(($totalOtherPrice) / 100) * 100);
-    $totalPoint = $runcateFoodPrice * 0.05 + $runcateBookPrice * 0.03 + $runcateClothingPrice * 0.02 + $runcateOtherPrice * 0.01;
+    $runcateFoodPrice = (floor(($totalFoodPrice) / 100) * 100 * 0.05);
+    $runcateBookPrice = (floor(($totalBookPrice) / 100) * 100 * 0.03);
+    $runcateClothingPrice = (floor(($totalClothingPrice) / 100) * 100 * 0.02);
+    $runcateOtherPrice = (floor(($totalOtherPrice) / 100) * 100 * 0.01);
+    $totalPoint = $runcateFoodPrice + $runcateBookPrice + $runcateClothingPrice + $runcateOtherPrice;
     echo $totalPoint;
 ?>
