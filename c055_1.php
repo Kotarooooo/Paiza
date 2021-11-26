@@ -8,7 +8,7 @@
         $logString = trim(fgets(STDIN));
             // var_dump($focusString);
         if (strpos($logString, $focusString) !== false) {
-            echo $logString. "\n";
+            echo $logString . "\n";
         } else {
             $notInclude = $notInclude + 1;
           }
