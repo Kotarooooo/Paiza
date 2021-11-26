@@ -7,7 +7,7 @@
     $diameter2 = $half2 ** 2;
     for ($i = 0; $i < $num; $i++) {
         [$xCood, $yCood] = explode(" ", trim(fgets(STDIN)));
-        $conditionalExpression = ($xCood - $circleXCood) **2 + ($yCood - $circleYCood) **2;
+        $conditionalExpression = ($xCood - $circleXCood) ** 2 + ($yCood - $circleYCood) ** 2;
         if ($diameter1 <= $conditionalExpression && $conditionalExpression <= $diameter2) {
             echo "yes" . "\n";
         } else {
